@@ -196,3 +196,22 @@ li:nth-child(even) {
 .neighbor-image:hover {
   transform: scale(1.1); 
 }
+
+
+
+.nested-list {
+  display: block; 
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; 
+}
+
+
+.nested-list li {
+  color: white; /* Set the text color of the list items to white */
+}
+.film-link:hover + .nested-list,
+.nested-list:hover {
+  max-height: 100px; 
+}
+
