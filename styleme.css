@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #0074D9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000 url('https://i.ibb.co/vmsJtWX/background.gif') center/cover no-repeat;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background: #1b2031;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.section {
+  background: rgba(36, 37, 90, 0.7);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  transition: background-color 0.3s;
+}
+
+.section:hover {
+  background-color: rgba(36, 37, 90, 0.9);
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex: 100%;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.list {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.list h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  margin: 10px 0;
+  color: #0074D9;
+}
+
+li:nth-child(even) {
+  color: #FF4136;
+}
+
+.nested-list {
+  padding-left: 60px;
+}
+
+.nested-list li {
+  margin: 5px 0;
+  color: initial;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-with-text {
+  text-align: center;
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-with-text img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.image-with-text img:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  display: block;
+  position: fixed;
+  top: -60px; 
+  left: 0;
+  width: 100%;
+  background: #1b2031;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1;
+  transition: top 0.3s;
+}
+
+
+.navbar a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+#navbar.show {
+  top: 0;
+}
+
+.neighbor-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+.neighbor-image {
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 20px; 
+  transition: transform 0.3s; 
+}
+
+.neighbor-text-container {
+  max-width: 850px; 
+}
+
+.neighbor-image:hover {
+  transform: scale(1.1); 
+}
