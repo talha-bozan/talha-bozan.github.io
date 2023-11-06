@@ -1,11 +1,8 @@
-window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("navbar");
-
-  if (window.scrollY > 50) {
-    navbar.classList.add("show");
-  } else {
-    navbar.classList.remove("show");
-  }
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebar);
+sidebarBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("close");
 });
 
 const filmLinks = document.querySelectorAll('.film-link');
