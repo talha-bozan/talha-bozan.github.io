@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styleme.css" />
+    <title>Project Portfolios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Project Portfolios</h1>
+    </header>
+    <section class="section">
+      <div class="tabs">
+        <button class="tablink" onclick="openProject(event, 'project1')">
+          Project 1
+        </button>
+        <button class="tablink" onclick="openProject(event, 'project2')">
+          Project 2
+        </button>
+        <button class="tablink" onclick="openProject(event, 'project3')">
+          Project 3
+        </button>
+      </div>
+
+      <div id="project1" class="tabcontent">
+        <h2>Project 1</h2>
+        <p>Description of Project 1 goes here...</p>
+      </div>
+
+      <div id="project2" class="tabcontent">
+        <h2>Project 2</h2>
+        <p>Description of Project 2 goes here...</p>
+      </div>
+
+      <div id="project3" class="tabcontent">
+        <h2>Project 3</h2>
+        <p>Description of Project 3 goes here...</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

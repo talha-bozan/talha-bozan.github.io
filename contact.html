@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styleme.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+    <section class="section">
+      <div class="contact-form">
+        <h2>Contact Information</h2>
+        <p>You can reach me at: your.email@example.com</p>
+
+        <!-- Social Media Links (customize as needed) -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/yourusername" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
