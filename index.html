@@ -3,49 +3,52 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styleme.css" />
     <!--Link for icons on sidebar-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>About Me</title>
   </head>
   <body>
+    <button id="sidebar-toggle" class="bx bx-menu"></button>
+
     <div class="sidebar">
-      <div class="logo-details">
-        <span class="logo_name">Menu</span>
+      <button id="sidebar-close" class="bx bx-x"></button>
+
+      <!-- Header for the sidebar -->
+      <div class="sidebar-header">
+        <h3>About Me</h3>
       </div>
+
+      <!-- Updated menu with improved text and descriptions -->
       <ul class="nav-links">
         <li>
-          <a href="#">
-            <i class='bx bxs-graduation'></i>
-            <span class="link_name">Education</span>
+          <a href="#education">
+            <i class="bx bxs-graduation"></i>
+            <span class="link_name">My Education</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bxs-briefcase'></i>
+          <a href="#projects">
+            <i class="bx bxs-briefcase"></i>
             <span class="link_name">Project Portfolio</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bxs-star' ></i>
-            <span class="link_name">Favorites</span>
+          <a href="#favorites">
+            <i class="bx bxs-star"></i>
+            <span class="link_name">Favorites (Movies, Books, Games)</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bxs-phone' ></i>
-            <span class="link_name">Contact</span>
+          <a href="#contact">
+            <i class="bx bxs-phone"></i>
+            <span class="link_name">Contact Me</span>
           </a>
         </li>
       </ul>
     </div>
-    <div>
-      <section class="home-section">
-        <div class="home-content">
-          <i class="bx bx-menu"></i>
-          <span class="text">Drop Down Sidebar</span>
-        </div>
-      </section>
-    </div>
+
     <section id="welcome" class="section">
       <img
         src="https://media.licdn.com/dms/image/D4D03AQH8mOARW-Vsqw/profile-displayphoto-shrink_200_200/0/1674888552256?e=1703721600&v=beta&t=PebBPFB6OTX07c6eIx-c06wPlkweseWTaN-ygYrTAec"
@@ -60,6 +63,7 @@
         to learn more about me.
       </p>
     </section>
+
     <section id="classes" class="section">
       <h2>Classes I'm Taking</h2>
       <ul>
