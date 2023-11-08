@@ -4,12 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styleme.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Project Portfolios</title>
   </head>
   <body>
-    <header>
-      <h1>Project Portfolios</h1>
-    </header>
+    <button id="sidebar-toggle" class="bx bx-menu"></button>
+
+    <div class="sidebar">
+      <button id="sidebar-close" class="bx bx-x"></button>
+
+      <div class="sidebar-header">
+        <h3>About Me</h3>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="education.html">
+            <i class="bx bxs-graduation"></i>
+            <span class="link_name">My Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="bx bxs-briefcase"></i>
+            <span class="link_name">Project Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a href="favorites.html">
+            <i class="bx bxs-star"></i>
+            <span class="link_name">Favorites (Movies, Books, Games)</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="bx bxs-phone"></i>
+            <span class="link_name">Contact Me</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <section class="section">
       <div class="tabs">
         <button class="tablink" onclick="openProject(event, 'project1')">
@@ -24,17 +65,17 @@
       </div>
 
       <div id="project1" class="tabcontent">
-        <h2>Project 1</h2>
-        <p>Description of Project 1 goes here...</p>
+        <h2>Image Compressing With HuffmanAlgorithm</h2>
+        <p>In this project i've</p>
       </div>
 
       <div id="project2" class="tabcontent">
-        <h2>Project 2</h2>
+        <h2>Car Racing Game With Unity</h2>
         <p>Description of Project 2 goes here...</p>
       </div>
 
       <div id="project3" class="tabcontent">
-        <h2>Project 3</h2>
+        <h2>Idle Farming Game</h2>
         <p>Description of Project 3 goes here...</p>
       </div>
     </section>
