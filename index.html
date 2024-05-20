@@ -1,166 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styleme.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styleme.css" />
+    <title>Game Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <title>About Me</title>
+    <link rel="icon" href="assets/images/favicon.ico" />
   </head>
   <body>
-       
-
-    <section id="welcome" class="section">
-     <img style="height:300px;max-width:300px;width: expression(this.width > 500 ? 500: true);" id="img_DocPreview"
-        src="https://media.licdn.com/dms/image/D4D03AQH8mOARW-Vsqw/profile-displayphoto-shrink_800_800/0/1674888553360?e=1718841600&v=beta&t=roE36IMVCkVnVp-s0TBsZjOnJZtFviJPsGChB_8E4e8"
-        alt="My Profile Picture"
-      />
-      <h2>Mehmet Talha Bozan</h2>
-      <p>
-        Hello, check out my
-        <a href="https://www.linkedin.com/in/mehmet-talha-bozan/"
-          >LinkedIn profile</a
+    <header class="section">
+      <div class="holder">
+        <img
+          style="max-width: 120%; height: auto; border: 3px solid white"
+          src="https://media.licdn.com/dms/image/D4D03AQH8mOARW-Vsqw/profile-displayphoto-shrink_800_800/0/1674888553360?e=1718841600&v=beta&t=roE36IMVCkVnVp-s0TBsZjOnJZtFviJPsGChB_8E4e8"
+        />
+        <h1>Mehmet Talha Bozan</h1>
+        <a
+          style="color: white"
+          href="https://www.linkedin.com/in/mehmet-talha-bozan/"
+          target="_blank"
         >
-        to learn more about me.
+          <img
+            src="https://www.linkedin.com/favicon.ico"
+            alt="LinkedIn"
+            style="
+              width: 20px;
+              height: 20px;
+              vertical-align: middle;
+              margin-right: 5px;
+            "
+          />
+          LinkedIn profile
+        </a>
+      </div>
+    </header>
+
+    <section class="section" id="projects">
+      <h2>Aeobiont</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>2D Social Simulation Game</h3>
+          <ul>
+            <li>Dynamic home building</li>
+            <li>Choosable dialogue systems to effect the game</li>
+            <li></li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>OOP structure</li>
+            <li>Cross-platform (Android & PC)</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Unitask</li>
+            <li>Dotween</li>
+          </ul>
+          <a href="https://github.com/talha-bozan/Aeobiont" target="_blank">
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-right: 5px;
+                padding: 2px;
+                background-color: white;
+                border-radius: 50%;
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <img
+          src="/assets/images/Aebiont.gif"
+          alt="Aebiont Screenshot"
+          style="border: 3px solid #24b37a"
+        />
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>3D Online Arcade Car Race</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>
+            3D Online Arcade Car Race Game with Turkish Cultural Themes
+            (participants)
+          </h3>
+          <ul>
+            <li>4 Different Power-Ups</li>
+            <li>Sync with other players</li>
+            <li>Trackable checkpoint system on game</li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>Engaging multiplayer experience using Photon</li>
+            <li>Intuitive and responsive controls</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Photon</li>
+          </ul>
+        </div>
+        <img
+          src="assets/images/developiaJoga.gif"
+          alt="3D Arcade Car Race
+        Screenshot"
+          style="border: 3px solid #24b37a"
+        />
+      </div>
+    </section>
+    <!--
+    <section class="section" id="projects">
+      <h2>Developia Joga</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>Arcade Car Race</h3>
+          <p>
+            Description of Project 1. What it's about, what technologies were
+            used, etc.
+          </p>
+          <a href="link_to_project_1" target="_blank">
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-right: 5px;
+                padding: 2px;
+                background-color: white;
+                border-radius: 50%;
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <img src=" alt="Project 1 Screenshot" style="border: 3px solid #24b37a"
+        />
+      </div>
+       Repeat for other projects 
+    </section>
+-->
+    <section class="section" id="projects">
+      <h2>Co-op Cleaning Game</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>Co-op Online/Offline Cleaning Game</h3>
+          <ul>
+            <li>Combat System to prevent cleaning</li>
+            <li>Trash collecting to be first</li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>OOP structure</li>
+            <li>Fast and clean game experience</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>FizzySteamWorks</li>
+            <li>Mirror</li>
+            <li>Dotween</li>
+          </ul>
+          <a
+            href="https://github.com/talha-bozan/Co-op-Cleaning-Game"
+            target="_blank"
+          >
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-right: 5px;
+                padding: 2px;
+                background-color: white;
+                border-radius: 50%;
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <img src="assets/images/trashgame1.gif"Project 1 Screenshot"
+        style="border: 3px solid #24b37a" />
+      </div>
+      <!-- Repeat for other projects -->
+    </section>
+    <section class="section" id="projects">
+      <h2>Game Island (Unfinished)</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>
+            Teknofest - 22 Minigames for primary school students <br />
+            <br />(Development)/(Team Leader)
+          </h3>
+          <ul>
+            I led a team of 8 members to develop a comprehensive student
+            tracking system using Firebase, which included both admin and user
+            panels.
+          </ul>
+          <h3>Key Responsibilities and Achievements:</h3>
+          <ul>
+            <li>Team Leadership</li>
+            <li>High Preliminary Evaluation Score From Teknofest</li>
+            <li>Task Tracking System</li>
+            <li>Problem Solving</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Firebase</li>
+          </ul>
+          <a href="https://github.com/Oyun-Adasi/OyunAdasi/" target="_blank">
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-right: 5px;
+                padding: 2px;
+                background-color: white;
+                border-radius: 50%;
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <img src="assets/images/oyunadasi.gif"Project 1 Screenshot"
+        style="border: 3px solid #24b37a" />
+      </div>
+      <!-- Repeat for other projects -->
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to reach out via email at
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
       </p>
     </section>
 
-    <section id="classes" class="section">
-      <h2>Classes I'm Taking</h2>
-      <ul>
-        <li>Web Programming and Internet Technologies🎉🎉</li>
-        <li>Artificial Intelligence</li>
-        <li>Computer Networks</li>
-      </ul>
-    </section>
+    <footer>
+      <p>Copyright © Your Name 2023</p>
+    </footer>
 
-    <section id="favorites" class="section">
-      <h2>My Favorites</h2>
-      <div class="list">
-        <h3>Favorite Movies</h3>
-        <ol>
-          <li>
-            <a href="https://www.imdb.com/title/tt0816692/" class="film-link"
-              >Interstellar</a
-            >
-            <ul class="nested-list hidden">
-              <li>Matthew McConaughey</li>
-              <li>Jessica Chastain</li>
-              <li>Mackenzie Foy</li>
-            </ul>
-          </li>
-          <li>
-            <a href="https://www.imdb.com/title/tt0338013/" class="film-link"
-              >Eternal Sunshine of the Spotless Mind</a
-            >
-            <ul class="nested-list hidden">
-              <li>Jim Carrey</li>
-              <li>Kate Winslet</li>
-              <li>Mark Ruffalo</li>
-            </ul>
-          </li>
-          <li>
-            <a href="https://www.imdb.com/title/tt0287803/" class="film-link"
-              >Fate</a
-            >
-            <ul class="nested-list hidden">
-              <li>Serdar Orçin</li>
-              <li>Zeynep Tokus</li>
-              <li>Engin Gunaydin</li>
-            </ul>
-          </li>
-          <li>
-            <a href="https://www.imdb.com/title/tt6628102/" class="film-link"
-              >The Wild Pear Tree</a
-            >
-            <ul class="nested-list hidden">
-              <li>Dogu Demirkol</li>
-              <li>Murat Cemcir</li>
-              <li>Akin Aksu</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-      <div class="list">
-        <h3>Favorite Books</h3>
-        <ol>
-          <li>Metal Firtina</li>
-          <li>Kanla Kirlenmiş Evrak</li>
-          <li>Java Documentation</li>
-          <li>Kaşagi</li>
-        </ol>
-      </div>
-      <div class="list">
-        <h3>Favorite Games</h3>
-        <ol>
-          <li>Dota 2</li>
-          <li>Diablo</li>
-          <li>Call Of Duty</li>
-          <li>Bionic Commando</li>
-        </ol>
-      </div>
-      <div class="list">
-        <h3>Favorite TV Shows</h3>
-        <ol>
-          <li>Kurtlar vadisi</li>
-          <li>Chuck</li>
-          <li>Vikings</li>
-          <li>Mr. Robot</li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="neighbor" class="section">
-      <h2>My Best Neighbor</h2>
-      <div class="neighbor-content">
-        <img
-          src="https://i.ibb.co/2kCpTM1/cem-image.jpg"
-          alt="Cem's Image"
-          class="neighbor-image"
-        />
-        <div class="neighbor-text-container">
-          <p>
-            Cem is my closest friend. We've even stayed up all night studying
-            together. We always laugh and have fun together. We've passed many
-            classes by studying with him. He is a very kind and honest person. I
-            often consult with him and seek advice from him on various matters.
-            We've shared many meals together. He is always friendly and
-            affectionate towards people. I'm glad to have Cem in my life...
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="images" class="section">
-      <div class="image-container">
-        <div class="image-with-text">
-          <img
-            src="https://i.ibb.co/kM3cPg0/happy-image.jpg"
-            alt="Happy Image"
-          />
-          <p>When I am happy</p>
-        </div>
-        <div class="image-with-text">
-          <img src="https://i.ibb.co/mqBQrRS/sad-image.jpg" alt="Sad Image" />
-          <p>When I am sad</p>
-        </div>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
-  <footer>
-    <p>Icon by <a target="_blank" href="https://icons8.com/icon/wekXDHaVl92g/t">Icons8</a></p>
-    <p>Favicon made by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-</footer>
-
 </html>
