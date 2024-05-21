@@ -75,3 +75,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .section {
+    overflow: hidden; /* Ensure content does not overflow */
+  }
+
+  .project {
+    flex-wrap: wrap; /* Allow the content to wrap */
+  }
+
+  .project img {
+    width: 100%; /* Make image width 100% of the parent container */
+    max-width: 100%; /* Ensure it doesn’t exceed parent container */
+  }
+}
