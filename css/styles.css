@@ -1,23 +1,24 @@
 .section {
-  background: rgba(36, 37, 90, 0.8) url('/mnt/data/A_semi-transparent_overlay_with_a_subtle_tech-insp.png') center/cover no-repeat;
+  background: #3E3D43;
   padding: 20px;
   text-align: center;
   margin: 10px auto;
   flex: 1;
-  transition: background-color 0.5s ease, border-radius 0.5s ease;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
   max-width: 1200px;
   border-radius: 15px;
+  border: 2px solid #3E3D43;
   font-family: 'Roboto', sans-serif; /* Updated font */
 }
 
 .section:hover {
-  background-color: rgba(36, 37, 90, 0.9);
-  border-radius: 25px;
+  background-color: #3E3D43AA;
+  border-color: #00C9C1;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #000 url() center/cover no-repeat;
+  background: #212021;
   color: #fff;
   margin: 0;
 }
@@ -35,16 +36,57 @@ header {
 }
 
 .holder {
+  margin: 60px 0 30px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  font-size: 1.3em;
+}
+
+.holder > h1 {
+  margin: 0;
+  letter-spacing: 2px;
 }
 
 header img {
-  width: 100px;
-  height: 100px;
+  max-width: 120%;
+  width: 256px;
+  height: 256px;
+}
+
+.avatar {
   border-radius: 50%;
+  border: 3px solid #F6F4F6;
+}
+
+.avatar:hover {
+  animation: hoover 5s ease-in-out infinite;
+}
+
+@keyframes hoover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.social-link {
+  color: white;
+  display: flex;
+  items-align: center;
+  gap: 10px;
+}
+
+.linkedin-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .project {
@@ -58,7 +100,7 @@ header img {
 .project img {
   width: 550px;
   height: auto;
-  border: 3px solid #24b37a;
+  border: 3px solid #00C9C1;
 }
 
 .project-content {
@@ -67,13 +109,30 @@ header img {
   margin-right: 20px;
 }
 
+.project-preview {
+  border: 3px solid #00C9C1;
+  border-radius: 15px;
+}
+
 a {
-  color: #24b37a;
+  color: #C0FCF7;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #C2C1C2;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    margin: 10px;
+  }
 }
 
 /* Media query for mobile devices */
