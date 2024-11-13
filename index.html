@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talha's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Talha's Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="assets/images/favicon.ico" />
-</head>
-
-<body>
-  <header class="">
-    <div class="holder">
-      <img class="avatar"
-        src="https://media.licdn.com/dms/image/v2/D4D03AQH8mOARW-Vsqw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674888553360?e=1731542400&v=beta&t=RTQVkcAoacSDrrBcIEeufp_dWdVfVgZKhmseaf23NG0" />
-      <div>
-        <h1>Mehmet Talha Bozan</h1>
-        <a class="social-link" href="https://www.linkedin.com/in/mehmet-talha-bozan/" target="_blank">
-          <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" class="linkedin-icon" />
-          LinkedIn
-        </a>
+  <body>
+    <header class="">
+      <div class="holder">
+        <img
+          class="avatar"
+          src="https://media.licdn.com/dms/image/v2/D4D03AQH8mOARW-Vsqw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674888553360?e=1731542400&v=beta&t=RTQVkcAoacSDrrBcIEeufp_dWdVfVgZKhmseaf23NG0"
+        />
+        <div>
+          <h1>Mehmet Talha Bozan</h1>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/mehmet-talha-bozan/"
+            target="_blank"
+          >
+            <img
+              src="https://www.linkedin.com/favicon.ico"
+              alt="LinkedIn"
+              class="linkedin-icon"
+            />
+            LinkedIn
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="section" id="projects">
-    <h2>Aeobiont</h2>
-    <div class="project">
-      <div class="project-content">
-        <h3>2D Social Simulation Game</h3>
-        <ul>
-          <li>Dynamic home building</li>
-          <li>Choosable dialogue systems to effect the game</li>
-        </ul>
-        <h3>Design Principles</h3>
-        <ul>
-          <li>OOP structure</li>
-          <li>Cross-platform (Android & PC)</li>
-        </ul>
-        <h3>Tools and Technologies</h3>
-        <ul>
-          <li>Unity</li>
-          <li>C#</li>
-          <li>Unitask</li>
-          <li>Dotween</li>
-        </ul>
-        <a href="https://github.com/talha-bozan/Aeobiont" target="_blank">
-          <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" style="
+    <section class="section" id="projects">
+      <h2>Procedural Turn-Based Grid Game</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>Grid-Based Turn-Based Strategy Game</h3>
+          <ul>
+            <li>Mesh generation on Runtime for spine</li>
+            <li>Procedurally generated monsters with modular abilities</li>
+            <li>Optimized A* pathfinding for efficient AI navigation</li>
+            <li>Realistic animations using inverse kinematics (IK)</li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>Scalable OOP architecture for ability and monster classes</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>A* Pathfinding</li>
+            <li>Inverse Kinematics (IK)</li>
+          </ul>
+          <a
+            href="https://github.com/talha-bozan/Procedural-Turn-Based-Game"
+            target="_blank"
+          >
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
                 width: 24px;
                 height: 24px;
                 vertical-align: middle;
@@ -56,45 +75,109 @@
                 padding: 2px;
                 background-color: white;
                 border-radius: 50%;
-              " />
-          View Project
-        </a>
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <video
+          class="project-preview"
+          src="assets/images/gridgame.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
       </div>
-      <!-- <img class="project-preview" src="/assets/images/Aebiont.gif" alt="Aebiont Screenshot" /> -->
-      <video class="project-preview" src="assets/images/Aebiont.mp4" autoplay muted playsinline loop></video>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="projects">
-    <h2>3D Online Arcade Car Race</h2>
-    <div class="project">
-      <div class="project-content">
-        <h3>
-          3D Online Arcade Car Race Game with Turkish Cultural Themes
-          (participants)
-        </h3>
-        <ul>
-          <li>4 Different Power-Ups</li>
-          <li>Sync with other players</li>
-          <li>Trackable checkpoint system on game</li>
-        </ul>
-        <h3>Design Principles</h3>
-        <ul>
-          <li>Engaging multiplayer experience using Photon</li>
-          <li>Intuitive and responsive controls</li>
-        </ul>
-        <h3>Tools and Technologies</h3>
-        <ul>
-          <li>Unity</li>
-          <li>C#</li>
-          <li>Photon</li>
-        </ul>
+    <section class="section" id="projects">
+      <h2>Aeobiont</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>2D Social Simulation Game</h3>
+          <ul>
+            <li>Dynamic home building</li>
+            <li>Choosable dialogue systems to effect the game</li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>OOP structure</li>
+            <li>Cross-platform (Android & PC)</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Unitask</li>
+            <li>Dotween</li>
+          </ul>
+          <a href="https://github.com/talha-bozan/Aeobiont" target="_blank">
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-right: 5px;
+                padding: 2px;
+                background-color: white;
+                border-radius: 50%;
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <!-- <img class="project-preview" src="/assets/images/Aebiont.gif" alt="Aebiont Screenshot" /> -->
+        <video
+          class="project-preview"
+          src="assets/images/Aebiont.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
       </div>
-      <!-- <img class="project-preview" src="assets/images/developiaJoga.gif" alt="3D Arcade Car Race Screenshot" /> -->
-      <video class="project-preview" src="assets/images/developiaJoga.mp4" autoplay muted playsinline loop></video>
-    </div>
-  </section>
-  <!--
+    </section>
+
+    <section class="section" id="projects">
+      <h2>3D Online Arcade Car Race</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>
+            3D Online Arcade Car Race Game with Turkish Cultural Themes
+            (participants)
+          </h3>
+          <ul>
+            <li>4 Different Power-Ups</li>
+            <li>Sync with other players</li>
+            <li>Trackable checkpoint system on game</li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>Engaging multiplayer experience using Photon</li>
+            <li>Intuitive and responsive controls</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Photon</li>
+          </ul>
+        </div>
+        <!-- <img class="project-preview" src="assets/images/developiaJoga.gif" alt="3D Arcade Car Race Screenshot" /> -->
+        <video
+          class="project-preview"
+          src="assets/images/developiaJoga.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
+      </div>
+    </section>
+    <!--
     <section class="section" id="projects">
       <h2>Developia Joga</h2>
       <div class="project">
@@ -126,30 +209,36 @@
       Repeat for other projects 
     </section>
 -->
-  <section class="section" id="projects">
-    <h2>Co-op Cleaning Game</h2>
-    <div class="project">
-      <div class="project-content">
-        <h3>Co-op Online/Offline Cleaning Game</h3>
-        <ul>
-          <li>Combat System to prevent cleaning</li>
-          <li>Trash collecting to be first</li>
-        </ul>
-        <h3>Design Principles</h3>
-        <ul>
-          <li>OOP structure</li>
-          <li>Fast and clean game experience</li>
-        </ul>
-        <h3>Tools and Technologies</h3>
-        <ul>
-          <li>Unity</li>
-          <li>C#</li>
-          <li>FizzySteamWorks</li>
-          <li>Mirror</li>
-          <li>Dotween</li>
-        </ul>
-        <a href="https://github.com/talha-bozan/Co-op-Cleaning-Game" target="_blank">
-          <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" style="
+    <section class="section" id="projects">
+      <h2>Co-op Cleaning Game</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>Co-op Online/Offline Cleaning Game</h3>
+          <ul>
+            <li>Combat System to prevent cleaning</li>
+            <li>Trash collecting to be first</li>
+          </ul>
+          <h3>Design Principles</h3>
+          <ul>
+            <li>OOP structure</li>
+            <li>Fast and clean game experience</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>FizzySteamWorks</li>
+            <li>Mirror</li>
+            <li>Dotween</li>
+          </ul>
+          <a
+            href="https://github.com/talha-bozan/Co-op-Cleaning-Game"
+            target="_blank"
+          >
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
                 width: 24px;
                 height: 24px;
                 vertical-align: middle;
@@ -157,43 +246,54 @@
                 padding: 2px;
                 background-color: white;
                 border-radius: 50%;
-              " />
-          View Project
-        </a>
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <!-- <img class="project-preview" src="assets/images/trashgame1.gif" /> -->
+        <video
+          class="project-preview"
+          src="assets/images/trashgame1.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
       </div>
-      <!-- <img class="project-preview" src="assets/images/trashgame1.gif" /> -->
-      <video class="project-preview" src="assets/images/trashgame1.mp4" autoplay muted playsinline loop></video>
-    </div>
-    <!-- Repeat for other projects -->
-  </section>
-  <section class="section" id="projects_unfinished">
-    <h2>Game Island</h2>
-    <div class="project">
-      <div class="project-content">
-        <h3>
-          Teknofest - 22 Minigames for primary school students <br />
-          <br />(Development)/(Team Leader)
-        </h3>
-        <ul>
-          I led a team of 8 members to develop a comprehensive student
-          tracking system using Firebase, which included both admin and user
-          panels.
-        </ul>
-        <h3>Key Responsibilities and Achievements:</h3>
-        <ul>
-          <li>Team Leadership</li>
-          <li>High Preliminary Evaluation Score From Teknofest</li>
-          <li>Task Tracking System</li>
-          <li>Problem Solving</li>
-        </ul>
-        <h3>Tools and Technologies</h3>
-        <ul>
-          <li>Unity</li>
-          <li>C#</li>
-          <li>Firebase</li>
-        </ul>
-        <a href="https://github.com/Oyun-Adasi/OyunAdasi/" target="_blank">
-          <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" style="
+      <!-- Repeat for other projects -->
+    </section>
+    <section class="section" id="projects_unfinished">
+      <h2>Game Island</h2>
+      <div class="project">
+        <div class="project-content">
+          <h3>
+            Teknofest - 22 Minigames for primary school students <br />
+            <br />(Development)/(Team Leader)
+          </h3>
+          <ul>
+            I led a team of 8 members to develop a comprehensive student
+            tracking system using Firebase, which included both admin and user
+            panels.
+          </ul>
+          <h3>Key Responsibilities and Achievements:</h3>
+          <ul>
+            <li>Team Leadership</li>
+            <li>High Preliminary Evaluation Score From Teknofest</li>
+            <li>Task Tracking System</li>
+            <li>Problem Solving</li>
+          </ul>
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Firebase</li>
+          </ul>
+          <a href="https://github.com/Oyun-Adasi/OyunAdasi/" target="_blank">
+            <img
+              src="https://github.githubassets.com/favicons/favicon.png"
+              alt="GitHub"
+              style="
                 width: 24px;
                 height: 24px;
                 vertical-align: middle;
@@ -201,29 +301,36 @@
                 padding: 2px;
                 background-color: white;
                 border-radius: 50%;
-              " />
-          View Project
-        </a>
+              "
+            />
+            View Project
+          </a>
+        </div>
+        <!-- <img class="project-preview" src="assets/images/oyunadasi1.gif" /> -->
+        <video
+          class="project-preview"
+          src="assets/images/oyunadasi1.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
       </div>
-      <!-- <img class="project-preview" src="assets/images/oyunadasi1.gif" /> -->
-      <video class="project-preview" src="assets/images/oyunadasi1.mp4" autoplay muted playsinline loop></video>
-    </div>
-    <!-- Repeat for other projects -->
-  </section>
+      <!-- Repeat for other projects -->
+    </section>
 
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>
-      Feel free to reach me via email at
-      <a href="mailto:contact@talhabozan.com">contact@talhabozan.com</a>
-    </p>
-  </section>
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to reach me via email at
+        <a href="mailto:contact@talhabozan.com">contact@talhabozan.com</a>
+      </p>
+    </section>
 
-  <footer>
-    <p>Copyright © Talha Bozan 2024</p>
-  </footer>
+    <footer>
+      <p>Copyright © Talha Bozan 2024</p>
+    </footer>
 
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
